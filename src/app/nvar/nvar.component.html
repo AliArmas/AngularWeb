@@ -1,0 +1,65 @@
+<header>
+  <div class="align-middle mb-10">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarColor01">
+        <ul class="navbar-nav mr-auto lead icono">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/home']"><span uk-icon="home"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/login']" *ngIf="!logued">login</a>
+            <a class="nav-link" [routerLink]="['/home']" (click)="logOut()" *ngIf="logued">logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/register']" *ngIf="!logued">Register</a>
+            <a class="nav-link" [routerLink]="['/carrito']" *ngIf="logued"><span uk-icon="cart"></span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Categorias</a>
+            <div class="dropdown-menu">
+              <a *ngFor="let cat of categorias" class="dropdown-item" [routerLink]="['/products']">{{cat}}</a>
+            </div>
+          </li>
+        </ul>
+        <form [formGroup]="formSearch" (ngSubmit)="searching()" class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" formControlName="search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <div class="perfilA" *ngIf="logued">
+          <a class="nav-link  perfilN" [routerLink]="['/user']"><img src="{{user?.photoURL}}" alt=""></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <h3>Perfil</h3>
+    <div class="row">
+      <div class="col-4">
+        <div class="fotoPerfil">
+          <img src="{{user?.photoURL}}" alt="">
+        </div>
+      </div>
+      <div class="col-3" *ngIf="user$">
+        <h6>{{user?.displayName}}</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="offcanvas-slide" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar carrito">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <h3>Carrito</h3>
+    <h6>{{user?.displayName}}</h6>
+    <ul>
+      <li><a class="badge badge-danger" uk-icon="icon: trash; ratio: 1"></a></li>
+    </ul>
+  </div>
+</div>

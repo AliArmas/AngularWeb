@@ -1,0 +1,35 @@
+<div class="container bg">
+
+  <div class="row col-md-12 col-md-offset-2 custyle bg1">
+
+    <table class="hh table table-striped custab table-hover">
+
+      <thead>
+        <tr>
+          <th>iD</th>
+          <th>Nombre</th>
+          <th class="text-center">Precio</th>
+          <th class="text-center">Descripcion</th>
+          <th class="text-center">Marca</th>
+          <th class="text-center">Categoria</th>
+          <th class="text-center">Opciones</th>
+        </tr>
+      </thead>
+
+      <tr *ngFor="let product of products; let i = index">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.manufacurer}}</td>
+        <td>{{product.category}}</td>
+        <td class="fila">
+          <Button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editModal">Edit</Button>
+          <button class=" btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">Delete</button>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+</div>

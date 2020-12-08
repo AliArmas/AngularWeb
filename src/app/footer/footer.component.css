@@ -1,0 +1,27 @@
+.footer,a{
+    background-color: black;
+    color: white;
+}
+.footer img{
+    width: 30px;
+    margin-right: 10px;
+}
+.container-footer{
+    margin-left: 40px;
+}
+
+h6,h5,h4,h3,h2,h1{
+    color: white;
+}
+.column h4,h5{
+    margin-top: 20px;
+    text-align: center;
+}
+.footer ul,a{
+    text-decoration: none;
+    margin-top: 10px;
+    list-style: none;
+}
+footer{
+    width: 100%;
+}

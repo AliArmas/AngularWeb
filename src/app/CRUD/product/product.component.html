@@ -1,0 +1,104 @@
+<app-list-products></app-list-products>
+
+<div class="modal fade" name="editModal" id="editModal" tabindex="-1" role="dialog"
+    aria-label="editModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        
+        <div class="modal-content">         
+            
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Editar Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+
+                    <div class="form-group">
+                        <label >Ingrese el iD del Producto</label>
+                        <input type="text" name="schol_controll" class="form-control" [(ngModel)]="idEdit">
+                    </div>
+
+                    <div class="form-group">
+                        <label >Nombre</label>
+                        <input type="text" name="name" class="form-control" [(ngModel)]="Put_product.name">
+                    </div>
+
+                    <div class="form-group">
+                        <label >Precio</label>
+                        <input type="number" name="price" class="form-control" [(ngModel)]="Put_product.price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Descripcion</label>
+                        <input type="text" name="description" class="form-control" [(ngModel)]="Put_product.description">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="">Marca</label>
+                        <input type="text" name="manufacurer" class="form-control" [(ngModel)]="Put_product.manufacurer">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Categoria</label>
+                        <input type="text" name="category" class="form-control" [(ngModel)]="Put_product.category">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="editProd(idEdit)" >Save Changes</button>
+            
+            </div>
+
+        </div>
+    
+    </div>
+
+</div>
+
+
+
+<div class="modal fade mt-5 pt-5" name="deleteModal" id="deleteModal" tabindex="-1" role="dialog"
+    aria-label="deleteModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        
+        <div class="modal-content">         
+            
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Delete Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+
+                    <div class="form-group">
+                        <label >Ingresa el iD del Producto</label>
+                        <input type="number" name="identifier" class="form-control" [(ngModel)]="idDelete">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="delete(idDelete)" >Save Changes</button>
+            
+            </div>
+
+        </div>
+    
+    </div>
+
+</div>

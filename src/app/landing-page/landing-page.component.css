@@ -1,0 +1,199 @@
+.conten img{
+    margin-top: 50px;
+    width: 30%;
+    margin-left: 200px;
+    margin-bottom: 40px;
+}
+.conten a{
+    text-decoration-style: none;
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #A4C0C8;
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    font-size: 30px;
+}
+
+.texto{
+    text-align: center;
+}
+.but{
+    margin-left: 40px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.but:hover{
+    letter-spacing: 6px;
+}
+.wrap{
+    background: rgba(0,0,0, 0.5) url("/assets/startup.jpg") no-repeat;
+    background-size: 1360px;
+    background-position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: -130px;
+    color: #ffff;
+    opacity: 1;
+}
+/*sections*/
+.txtP h1{
+    text-align: center;
+}
+.txtP{
+    margin: 10px;
+}
+
+.page h1,p{
+    color: #33496D;
+}
+.page img{
+    background-attachment: fixed;
+    position: sticky;
+    max-width: 650px;
+    max-height: 400px;
+}
+.titleText span{
+    color : #FFA200;
+    font-size: 50px;
+    min-height: 1.5rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.contact{    
+    position: relative;
+    min-width: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url("/assets/send.jpg");
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+}
+.content{
+    margin-left: 155px;
+    text-align: center;
+}
+
+.contact .content{
+  max-width: 800px;
+  text-align: center;   
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFA200;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.contenedor .contacInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedor .contacInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;    
+}
+.contenedor .contacInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.contenedor .contacInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #Fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contenedor .contacInfo .box .text h3{
+    font-weight: 500;
+    color: #33496D;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333333;
+    font-weight: 500;
+}
+.contactForm .inpuBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inpuBox input,
+.contactForm .inpuBoxtextarea{
+    width: 100%;
+    padding: 5px,0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #3333;
+    resize: none;
+}
+.contactForm .inpuBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px , 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666
+}
+.contactForm .inpuBox input:focus ~ span,
+.contactForm .inpuBox input:valid ~ span,
+.contactForm .inpuBox textarea:focus ~ span,
+.contactForm .inpuBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-27px);
+}
+.contactForm .inpuBox input[type="submit"]{
+    width: 100px;
+    background: #a71818;
+    color: #Fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+

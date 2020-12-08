@@ -1,0 +1,23 @@
+.fotoPerfil img{
+    max-width: 150px;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+.fotoPerfil button{
+    margin-left: 45px;
+}
+
+#Descripcion{
+    border-style: none;
+    text-decoration: none;
+    animation: none;
+    
+}
+.container{
+    margin: 2%;
+}
+
+.fotoPerfil{
+    max-width: 200px;
+    max-height: 200px;
+}

@@ -1,0 +1,25 @@
+.nav-link{
+    color: blanchedalmond;
+}
+
+.carrito{
+    background-color: #096376;
+}
+.fotoPerfil img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: gray;
+}
+
+.perfilN img{
+    border-radius: 50%;
+    max-width: 60px;
+}
+.perfilA{
+    text-align: center;
+}
+.perfilA a{
+    text-decoration: none;
+    text-transform: none;
+}

@@ -1,0 +1,130 @@
+<div class="wrap">
+    <div class="conten ">
+        <div class="row">
+            <div class="col-5">
+                <img src="/assets/logo.png" alt="">
+                <div class="texto">
+                    <h1>Soluciones integrales de computo</h1>
+                    <h5>20 años siendo tu mejor opción!</h5>
+                    <div class="row ">
+                        <div class="col-6" *ngIf="!logued">
+                            <button class="but btn-block ui inverted yellow basic button but" (click)="redirectTo()">Registrarse</button>
+                        </div>
+                        <div class="col-6"*ngIf="!logued">
+                            <a href="#pagina"><button class="ui inverted red basic button but" >Leer mas</button></a>
+                        </div>
+                        <div class="col-12"*ngIf="logued">
+                            <a href="#pagina"><button class="ui inverted red basic button but" >Leer mas</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffff" fill-opacity="1" d="M0,224L60,234.7C120,245,240,267,360,234.7C480,203,600,117,720,112C840,107,960,181,1080,224C1200,267,1320,277,1380,282.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+</div>
+<div class="page" >
+    <a name="pagina"></a>
+    <div class="row">
+        <div class="col-6">
+            <img src="/assets/camera.jpg" alt="">
+        </div>
+        <div class="col-6 d-flex align-items-center">
+            <div class="txtP">
+                <h1 class="titleText"><span>S</span>eguriad en tu negocio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo itaque harum voluptate tempora magni libero ullam officiis nesciunt cum nisi. Illum tenetur voluptates nihil necessitatibus iste similique numquam tempora corporis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-6 d-flex align-items-center">
+            <div class="txtP ">
+                <h1 class="titleText"><span>L</span>a misma calidad mejor accsesibilidad</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo itaque harum voluptate tempora magni libero ullam officiis nesciunt cum nisi. Illum tenetur voluptates nihil necessitatibus iste similique numquam tempora corporis.</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="/assets/shop.jpg" alt="">
+        </div>
+        
+    </div>    
+    <div class="row mt-5">
+        
+        <div class="col-6">
+            <img src="/assets/office.png" alt="">
+        </div>
+        <div class="col-6 d-flex align-items-center">
+            <div class="txtP">
+                <h1 class="titleText"><span>D</span>istribuidor autorizado de OFIMAGEN</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo itaque harum voluptate tempora magni libero ullam officiis nesciunt cum nisi. Illum tenetur voluptates nihil necessitatibus iste similique numquam tempora corporis.</p>
+            </div>
+        </div>
+    </div>    
+    <div class="row mt-5">
+        <div class="col-6 d-flex align-items-center">
+            <div class="txtP">
+                <h1 class="titleText"><span>E</span>L mejor servicio tecnico</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo itaque harum voluptate tempora magni libero ullam officiis nesciunt cum nisi. Illum tenetur voluptates nihil necessitatibus iste similique numquam tempora corporis.</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="/assets/reparar.jpg" alt="">
+        </div> 
+    </div>   
+</div>
+<div class="contact">
+    <div class="content">
+        <h2>Contactanos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores iste, veritatis sit nihil unde rem mollitia, impedit ipsam quod omnis nulla, adipisci illum? Asperiores voluptatibus et aliquid quasi temporibus.</p>
+    </div>
+    <div class="contenedor">
+        <div class="contacInfo">
+            <div class="box">
+                <div class="icon"></div>
+                <div class="text">
+                    <h3>Direccion</h3>
+                     <p>13 poniente entre avenida central y primera norte</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"></div>
+                <div class="text">
+                    <h3>Telefono</h3>
+                     <p>9613632550</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"></div>
+                <div class="text">
+                    <h3>Correo electronico</h3>
+                     <p>pagina.web.django@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <div>
+                <form [formGroup]="formContacUs">
+                    <h2>Envianos un correo</h2>
+                    <div class="inpuBox">
+                        <input type="text" name="" id="" required="required" formControlName="fullName">
+                        <span>Nombre completo</span>
+                    </div>
+                    <div class="inpuBox">
+                        <input type="text" name="" id="" required="required" formControlName="email">
+                        <span>email</span>
+                    </div>
+                    <div class="inpuBox">
+                        <textarea required="required" formControlName="message"></textarea>
+                        <span>Mensaje</span>
+                    </div>
+                    <div class="inpuBox">
+                        <input type="submit" name="" id="" value="Enviar" (click)="valuesEmail()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

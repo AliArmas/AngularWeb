@@ -1,0 +1,54 @@
+.body{
+    background-color: #2A2F36;
+}
+label{
+    color: black;
+}
+.login-auth img{
+    width: 20px;
+    height: 20px;
+}
+.imgL img{
+    max-width: 120px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.login{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.payment-logo{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 85px;
+}
+
+.filer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(40%,30%,0);
+    width: 60%;
+    height: 60%;
+    z-index: 30;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.register-auth img{
+    width: 30x;
+    height: 30px;
+}
+
+.register-auth{
+    margin-top: 20px;
+}
